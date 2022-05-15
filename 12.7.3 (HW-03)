@@ -1,0 +1,13 @@
+per_cent = {'ТКБ': 5.6, 'СКБ': 5.9, 'ВТБ': 4.28, 'СБЕР': 4.0}
+bank = list(per_cent.items())
+#print (bank)
+bank_k = list(per_cent.keys())
+#print (bank_k)
+value = list(per_cent.values())
+#print (value)
+money = int(input ("money",))
+value: float
+deposit = [(bank_k[:3], value*money/100)for bank_k, value in per_cent.items()]
+print(deposit)
+max = max(deposit)
+print(max)
